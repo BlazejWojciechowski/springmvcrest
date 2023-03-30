@@ -2,9 +2,11 @@ package blaze.spring.springmvcrest.services;
 
 import blaze.spring.springmvcrest.domain.Customer;
 import blaze.spring.springmvcrest.repositories.CustomerRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepository customerRepository;
